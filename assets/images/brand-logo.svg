@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 360 90">
+  <circle cx="44" cy="45" r="25" fill="#6b5cff"/>
+
+  <path
+    d="M27 44
+       C28 36, 33 31, 39 33
+       L41 34
+       C43 35, 45 35, 47 34
+       L49 33
+       C55 31, 60 36, 61 44
+       L62 49
+       C63 55, 59 60, 54 59
+       C51 58.5, 49.5 56, 48 53.5
+       C47.2 52.2, 46.2 51.5, 44 51.5
+       C41.8 51.5, 40.8 52.2, 40 53.5
+       C38.5 56, 37 58.5, 34 59
+       C29 60, 25 55, 26 49
+       Z"
+    fill="#fff"
+  />
+  
+  <path
+    d="M32 42h4v-4h4v4h4v4h-4v4h-4v-4h-4z"
+    fill="#6b5cff"
+  />
+
+  <circle cx="53" cy="39.5" r="2.3" fill="#6b5cff"/>
+  <circle cx="58.5" cy="45" r="2.3" fill="#6b5cff"/>
+  <circle cx="47.5" cy="45" r="2.3" fill="#6b5cff"/>
+  <circle cx="53" cy="50.5" r="2.3" fill="#6b5cff"/>
+
+  <text x="85" y="56" fill="#fff" font-family="Arial, sans-serif" font-size="31" font-weight="800">
+    GameZone
+  </text>
+  <text x="260" y="58" fill="#3cffb0" font-family="Arial, sans-serif" font-size="22" font-weight="700">
+    GE
+  </text>
+</svg>

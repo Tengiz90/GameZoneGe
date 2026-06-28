@@ -1,0 +1,265 @@
+.intro-block {
+  padding: 76px 0 92px;
+  position: relative;
+  overflow: hidden;
+  background:
+    radial-gradient(
+      circle at 18% 15%,
+      rgba(107, 92, 255, 0.45),
+      transparent 28%
+    ),
+    radial-gradient(
+      circle at 83% 30%,
+      rgba(48, 255, 179, 0.22),
+      transparent 24%
+    ),
+    #0d1024;
+}
+.intro-layout {
+  display: flex;
+  align-items: center;
+  gap: 48px;
+}
+.intro-copy {
+  flex: 1.04;
+}
+.intro-copy h1 {
+  font-size: clamp(38px, 6vw, 70px);
+  line-height: 1.05;
+  margin: 18px 0;
+}
+.intro-copy p {
+  color: var(--muted);
+  font-size: 18px;
+  max-width: 620px;
+}
+.intro-actions {
+  display: flex;
+  gap: 14px;
+  flex-wrap: wrap;
+  margin-top: 28px;
+}
+.console-showcase {
+  flex: 0.96;
+  min-height: 465px;
+  position: relative;
+}
+.slide-card {
+  position: absolute;
+  inset: 0;
+  border-radius: 42px;
+  overflow: hidden;
+  border: 1px solid var(--line);
+  box-shadow: var(--shadow);
+  opacity: 0;
+  animation: consoleSlide 16s infinite;
+  background: #151936;
+}
+.slide-card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.slide-card:nth-child(2) {
+  animation-delay: 4s;
+}
+.slide-card:nth-child(3) {
+  animation-delay: 8s;
+}
+.slide-card:nth-child(4) {
+  animation-delay: 12s;
+}
+.slide-label {
+  position: absolute;
+  left: 28px;
+  bottom: 28px;
+  background: rgba(21, 25, 34, 0.82);
+  -webkit-backdrop-filter: blur(10px);
+  backdrop-filter: blur(10px);
+  border-radius: 999px;
+  padding: 13px 18px;
+  font-weight: 900;
+}
+.slide-label::before {
+  content: "";
+  width: 9px;
+  height: 9px;
+  border-radius: 50%;
+  background: var(--accent2);
+  display: inline-block;
+  margin-right: 9px;
+}
+@keyframes consoleSlide {
+  0%,
+  20% {
+    opacity: 1;
+    transform: scale(1);
+  }
+  25%,
+  95% {
+    opacity: 0;
+    transform: scale(1.03);
+  }
+  100% {
+    opacity: 1;
+  }
+}
+.stats-row {
+  display: flex;
+  gap: 14px;
+  flex-wrap: wrap;
+  margin-top: 30px;
+}
+.stat-box {
+  background: rgba(255, 255, 255, 0.08);
+  border: 1px solid var(--line);
+  padding: 15px 18px;
+  border-radius: 18px;
+  min-width: 135px;
+}
+.stat-box strong {
+  display: block;
+  font-size: 25px;
+}
+.category-card {
+  padding: 26px;
+  position: relative;
+  overflow: hidden;
+}
+.category-card::after {
+  content: "";
+  position: absolute;
+  right: -45px;
+  top: -45px;
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  background: rgba(107, 92, 255, 0.22);
+  transition: 0.25s;
+}
+.category-card:hover::after {
+  transform: scale(1.4);
+}
+.category-card i {
+  font-size: 34px;
+  color: var(--accent2);
+  margin-bottom: 18px;
+}
+.product-list {
+  display: flex;
+  gap: 22px;
+  flex-wrap: wrap;
+  margin-top: 34px;
+}
+.product-card {
+  flex: 1 1 260px;
+  overflow: hidden;
+}
+.product-card img {
+  width: 100%;
+  object-fit: cover;
+  background: #fff;
+}
+.product-body {
+  padding: 22px;
+}
+.price {
+  color: var(--accent2);
+  font-weight: 900;
+  margin-top: 12px;
+  display: block;
+}
+.tournament-card {
+  display: flex;
+  align-items: stretch;
+  overflow: hidden;
+  margin-top: 34px;
+}
+.tournament-image {
+  flex: 1.1;
+  min-height: 315px;
+  position: relative;
+  background: #111;
+}
+.tournament-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.prize-logo {
+  position: absolute;
+  top: 22px;
+  left: 22px;
+  background: linear-gradient(135deg, #ffb84d, #ff4d75);
+  padding: 16px 18px;
+  border-radius: 18px;
+  font-weight: 900;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.32);
+}
+.tournament-info {
+  flex: 0.9;
+  padding: 34px;
+}
+.news-strip {
+  display: flex;
+  gap: 22px;
+  flex-wrap: wrap;
+  margin-top: 34px;
+}
+.news-mini {
+  flex: 1 1 300px;
+  overflow: hidden;
+}
+.news-mini img {
+  height: 210px;
+  width: 100%;
+  object-fit: cover;
+}
+.news-mini div {
+  padding: 22px;
+}
+.lounge-banner {
+  padding: 42px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+  background: linear-gradient(
+    135deg,
+    rgba(107, 92, 255, 0.28),
+    rgba(48, 255, 179, 0.11)
+  );
+}
+.lounge-banner p {
+  max-width: 620px;
+  color: var(--muted);
+}
+@media (max-width: 920px) {
+  .intro-layout,
+  .tournament-card,
+  .lounge-banner {
+    flex-direction: column;
+  }
+  .console-showcase {
+    width: 100%;
+    min-height: 390px;
+  }
+  .tournament-image {
+    width: 100%;
+  }
+}
+@media (max-width: 560px) {
+  .console-showcase {
+    min-height: 305px;
+  }
+  .intro-actions .btn {
+    width: 100%;
+  }
+  .tournament-info,
+  .lounge-banner {
+    padding: 24px;
+  }
+  .news-mini img {
+    height: 180px;
+  }
+}

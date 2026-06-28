@@ -1,0 +1,61 @@
+.repair-panel {
+  display: flex;
+  gap: 34px;
+  align-items: center;
+}
+.repair-info,
+.repair-aside {
+  flex: 1;
+}
+.repair-info h2 {
+  font-size: 42px;
+  line-height: 1.16;
+  margin: 16px 0;
+}
+.repair-aside {
+  padding: 30px;
+  background: linear-gradient(180deg, #1b2145, #10142d);
+  border-radius: 30px;
+  border: 1px solid var(--line);
+}
+.check-list {
+  list-style: none;
+  margin-top: 22px;
+}
+.check-list li {
+  padding: 13px 0;
+  border-bottom: 1px solid var(--line);
+  display: flex;
+  gap: 12px;
+}
+.check-list i {
+  color: var(--accent2);
+}
+.pricing {
+  display: flex;
+  gap: 18px;
+  flex-wrap: wrap;
+}
+.price-card {
+  flex: 1 1 230px;
+  padding: 24px;
+  border-radius: 24px;
+  background: rgba(255, 255, 255, 0.06);
+  border: 1px solid var(--line);
+}
+.price-card span {
+  font-size: 28px;
+  color: var(--accent2);
+  font-weight: 900;
+}
+.warning-box {
+  padding: 28px;
+  border-radius: 24px;
+  background: rgba(255, 77, 117, 0.12);
+  border: 1px solid rgba(255, 77, 117, 0.35);
+}
+@media (max-width: 880px) {
+  .repair-panel {
+    flex-direction: column;
+  }
+}

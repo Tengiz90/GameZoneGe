@@ -1,0 +1,86 @@
+.contact-layout {
+  display: flex;
+  gap: 30px;
+  align-items: flex-start;
+}
+.contact-info {
+  flex: 0.9;
+}
+.contact-form {
+  flex: 1.1;
+  padding: 30px;
+}
+.info-box {
+  padding: 24px;
+  border-radius: 24px;
+  background: rgba(255, 255, 255, 0.06);
+  border: 1px solid var(--line);
+  margin-bottom: 16px;
+}
+.info-box i {
+  color: var(--accent2);
+  font-size: 24px;
+  margin-bottom: 8px;
+}
+.form-grid {
+  display: flex;
+  gap: 14px;
+}
+.form-grid > * {
+  flex: 1;
+}
+.contact-form form {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.contact-form select.form-control[name="service"] {
+  border-radius: 15px 15px 0 0;
+  color: #fff;
+
+   appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+
+  padding: 14px 55px 14px 16px;
+
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='14' height='14' viewBox='0 0 24 24' fill='none' stroke='gray' stroke-width='3' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M6 9l6 6 6-6'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: right 22px center;
+  background-size: 14px;
+}
+
+
+.form-control > option{
+    background: #1f1f1f;
+}
+
+.contact-form select.form-control[name="service"]:has(option[value=""]:checked) {
+  color: gray;
+}
+
+.contact-form select.form-control[name="service"] option {
+  color: #fff;
+}
+.map-card {
+  height: 360px; 
+  border-radius: 28px;
+  overflow: hidden;
+  border: 1px solid var(--line);
+  background: #222a5a;
+}
+
+.map-card iframe {
+  width: 100%;
+  height: 100%;
+  border: 0;
+  display: block;
+}
+
+@media (max-width: 880px) {
+  .contact-layout,
+  .form-grid {
+    flex-direction: column;
+  }
+}

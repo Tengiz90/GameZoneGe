@@ -501,6 +501,31 @@ color: #111827;
   color: #5b21b6;
 }
 
+.more-games {
+  display: flex;
+  justify-content: center;
+  margin-top: 42px;
+}
+
+.more-games-link {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 52px;
+  padding: 0 34px;
+  border-radius: 999px;
+  color: #ffffff;
+  background: var(--accent);
+  font-weight: 800;
+  transition: 0.3s ease;
+  box-shadow: 0 14px 34px rgba(107, 92, 255, 0.32);
+  cursor: pointer;
+}
+
+.more-games-link:hover {
+  transform: translateY(-4px);
+  background: #5547e8;
+}
 
 .tournament-section {
   padding: 90px 0;
